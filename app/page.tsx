@@ -1,5 +1,9 @@
-import Image from "next/image";
+import Dropdown from "../components/Dropdown";
 
 export default function Home() {
-  return <div>test</div>;
+  return (
+    <div className="m-10">
+      <Dropdown />
+    </div>
+  );
 }
