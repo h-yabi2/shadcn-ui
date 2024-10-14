@@ -23,7 +23,7 @@ export default function Button() {
           <ButtonBase />
           <ButtonBase />
         </div>
-        <ButtonBase />
+        <ButtonBase className="bg-warning text-warning-foreground" />
         <ButtonBase />
       </div>
     </>
