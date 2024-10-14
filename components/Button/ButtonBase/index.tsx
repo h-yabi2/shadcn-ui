@@ -12,13 +12,19 @@ interface ButtonBaseProps {
     | "link"
     | null
     | undefined;
+  className?: string;
   children?: React.ReactNode;
   onClick?: () => void;
 }
 
-export function ButtonBase({ variant, children, onClick }: ButtonBaseProps) {
+export function ButtonBase({
+  variant,
+  className,
+  children,
+  onClick,
+}: ButtonBaseProps) {
   return (
-    <Button variant={variant} onClick={onClick}>
+    <Button className={className} variant={variant} onClick={onClick}>
       {children}
       Button
     </Button>
