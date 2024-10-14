@@ -2,6 +2,7 @@
 
 import { ButtonBase } from "@/components/Button/ButtonBase";
 import { Mail, SquareArrowOutUpRight } from "lucide-react";
+import { DialogDemo } from "@/components/Dialog";
 
 export default function Button() {
   const handleClick = (url: string) => () => {
@@ -19,6 +20,8 @@ export default function Button() {
         >
           <SquareArrowOutUpRight className="mr-2 h-4 w-4" />
         </ButtonBase>
+        <DialogDemo />
+
         <div className="flex gap-3 m-10">
           <ButtonBase />
           <ButtonBase />
